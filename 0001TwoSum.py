@@ -1,3 +1,13 @@
+#Question Soruces: https://leetcode.com/problems/two-sum/
+
+## Given an array of integers nums and an integer target, return indices of the two numbers such that they add up 
+## to target.
+## You may assume that each input would have exactly one solution, and you may not use the same element twice.
+## You can return the answer in any order.
+
+
+
+### At first, I tried to solve this questions without using 2 for loops
 def twoSum(A_list, B):
     a = 0
     b = a + 1
@@ -15,13 +25,16 @@ def twoSum(A_list, B):
             c += 1
             
             
-            
+### However, using 2 for loops are still faster       
 def twoSum2(C,A_list,B):
     for count in range(len(A_list)):
         for match in range(count+1, len(A_list)):
             if A_list[count] + A_list[match] == B:
                 return (count,match)
 
+
+
+### Using dictionary is much faster, and this is the very first time I learn the benefit and speed of dictionary
 def twoSum3(nums,target):
     seen = {}  # empty dictionary
     for index, value in enumerate(nums):
