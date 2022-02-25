@@ -34,7 +34,8 @@ def twoSum2(C,A_list,B):
 
 
 
-### Using dictionary is much faster, and this is the very first time I learn the benefit and speed of dictionary
+### Using dictionary is much faster, and this is the very first time I learned the benefit and speed of using 
+### dictionary
 def twoSum3(nums,target):
     seen = {}  # empty dictionary
     for index, value in enumerate(nums):
